@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+
+
+}
+
+body{
+    font-size: 1.6rem;
+    background: linear-gradient(45deg, #190361 0%, #B0F 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.hide{
+    display: none;
+}
+
+h1, button{
+    color: #34355B;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;    
+}
+
+p{
+    font-family: DM Sans;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+main h1{
+    margin-bottom: 1.4rem;
+}
+
+main p{
+    margin-bottom: 2.6rem;
+}
+
+main{
+    padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+    border-radius: .6rem;
+    background: #FFF;
+
+    text-align: center;
+    
+    box-shadow: 0rem .2rem .4rem 0rem rgba(0, 0, 0, 0.10);
+
+    width: min(42.8rem, 90%);
+    margin-top: -12rem;
+    /* margin: 0 auto; */
+}
+
+img#cookie{
+    /* transform: translate(0, 0); */
+    animation: shake 200ms infinite paused;
+    cursor: pointer;
+}
+
+@keyframes shake{
+    40%{
+        transform: translate(-0.4rem, -0.6rem);
+    }
+
+    60%{
+        transform: translate(.4rem, .4rem)
+    }
+
+    80%{
+        transform: translate(.8rem, .7rem)
+    }
+
+    40%{
+        transform: translate(-0.9rem, .8rem);
+    }
+}
+
+img#cookie:hover{
+    animation-play-state: running;
+}
+
+main{
+    overflow: hidden;
+}
+
+#screen2 p{
+    background: #E4EDF1;
+    box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+    padding: 1rem;
+
+    color: #000;
+
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+#screen2 button{
+    border-radius: .4rem;
+    background: #FF9500;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+    border: 0;
+    transition: background 200ms;
+    cursor: pointer;
+}
+
+#screen2 button:hover{
+    background: #d17c04;
+}
+
+#screen2 p{
+    animation: growFromBottom .7s backwards;
+}
+
+@keyframes growFromBottom{
+    0%{
+        transform: scale(0.4) translateY(200%);
+    }
+}
